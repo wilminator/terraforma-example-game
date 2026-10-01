@@ -11,7 +11,7 @@ license-files = ["LICENSE"]
 authors = [{ name = "Michael Allen Wilmes" }]
 requires-python = ">=3.14"
 dependencies = [
-    # The engine, at a tagged release (a release tag).
+    # The engine, at a tagged release.
     "terraforma[sqlite] @ git+https://github.com/wilminator/terraforma@v0.1.0",
 ]
 
