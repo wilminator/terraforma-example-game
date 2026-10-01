@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   pull_request:
+  # The engine is followed at main: a daily run catches an engine change
+  # that breaks this game, even on days nothing here changes.
+  schedule:
+    - cron: "17 13 * * *"
+  workflow_dispatch:
 
 jobs:
   test:
