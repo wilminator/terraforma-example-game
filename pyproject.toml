@@ -11,12 +11,12 @@ license-files = ["LICENSE"]
 authors = [{ name = "Michael Allen Wilmes" }]
 requires-python = ">=3.14"
 dependencies = [
-    # The engine, at a tagged release (moves to a version tag once the engine's first release is out).
-    "terraforma[sqlite] @ git+https://github.com/wilminator/terraforma@split",
+    # The engine, at a tagged release.
+    "terraforma[sqlite] @ git+https://github.com/wilminator/terraforma@v0.1.0",
 ]
 
 [project.optional-dependencies]
-dev = ["terraforma[testing] @ git+https://github.com/wilminator/terraforma@split"]
+dev = ["terraforma[testing] @ git+https://github.com/wilminator/terraforma@v0.1.0"]
 
 [tool.hatch.metadata]
 allow-direct-references = true
