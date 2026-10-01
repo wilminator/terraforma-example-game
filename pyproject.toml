@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "terraforma-example-game"
+version = "0.1.0"
+description = "An example game module for the TerraForma RPG Engine"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Michael Allen Wilmes" }]
+requires-python = ">=3.14"
+dependencies = [
+    # The engine, at a tagged release (moves to a version tag once the engine's first release is out).
+    "terraforma[sqlite] @ git+https://github.com/wilminator/terraforma@split",
+]
+
+[project.optional-dependencies]
+dev = ["terraforma[testing] @ git+https://github.com/wilminator/terraforma@split"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/example_game"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

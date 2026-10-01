@@ -1,0 +1,4 @@
+[
+  {"name": "Slime", "stats": {"HP": 8, "MP": 0}},
+  {"name": "Cave Bat", "stats": {"HP": 5, "MP": 2}}
+]

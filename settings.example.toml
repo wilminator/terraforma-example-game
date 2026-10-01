@@ -1,0 +1,4 @@
+# Copy to settings.toml (never commit that one).
+database_url = "sqlite+aiosqlite:///example.db"
+session_secret = "change me to a long random string, 32 characters or more"
+secure_cookies = false
